@@ -1,0 +1,15 @@
+<html>
+<body>
+<video id="video"></video>
+<script src="lib/qr-scanner.umd.min.js"></script>
+<script>
+	let videoElem = document.getElementByID('#video");
+	const qrScanner = new QrScanner(
+		videoElem,
+		result => console.log('decoded qr code:', result,
+		{  }
+	);
+	qrScanner.start();
+</script>
+</body>
+</html>
